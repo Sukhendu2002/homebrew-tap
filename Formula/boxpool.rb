@@ -1,26 +1,26 @@
 class Boxpool < Formula
   desc "Pool spare machines into sandboxes for AI agents"
   homepage "https://boxpool.run"
-  version "0.1.2"
+  version "0.1.3"
   license "Apache-2.0"
 
   on_macos do
     depends_on arch: :arm64
     depends_on macos: :sonoma
     on_arm do
-      url "https://github.com/Sukhendu2002/boxpool/releases/download/v0.1.2/boxpool-darwin-arm64", using: :nounzip
-      sha256 "fc035e5f1f0f47df66ad66727636064177f0a9d8512aa7b51ba4a2dfa936a084"
+      url "https://github.com/Sukhendu2002/boxpool/releases/download/v0.1.3/boxpool-darwin-arm64", using: :nounzip
+      sha256 "73941d8f64fe2b7e208e67f33a9003429e385880954708ea4a9cbb112587e220"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Sukhendu2002/boxpool/releases/download/v0.1.2/boxpool-linux-amd64", using: :nounzip
-      sha256 "72f4830dcc1d14acc888ef9709373743c2fdf60db8c37076127fc27d3f84b03c"
+      url "https://github.com/Sukhendu2002/boxpool/releases/download/v0.1.3/boxpool-linux-amd64", using: :nounzip
+      sha256 "f8494ed5b6a368a7cd28e7d8876cc9a07d51efa72b4cc8b8121238e4f2f26405"
     end
     on_arm do
-      url "https://github.com/Sukhendu2002/boxpool/releases/download/v0.1.2/boxpool-linux-arm64", using: :nounzip
-      sha256 "333d5ae1d836be55c5d22d2a6306793ea5a4d6c7f452e2f6fb2e1fdc928d8692"
+      url "https://github.com/Sukhendu2002/boxpool/releases/download/v0.1.3/boxpool-linux-arm64", using: :nounzip
+      sha256 "eb26c2b8e61cd8f817684a21768c8b80d0bdf0cb061d059f0348f27abf819ae8"
     end
   end
 
